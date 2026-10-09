@@ -1,0 +1,49 @@
+name: 🔵 Story
+description: A user-centric requirement or feature.
+labels: ['type:story', 'status:new']
+title: "🔵 "
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: Story
+      description: The story from the user's perspective.
+      placeholder: As a {role}, I want {feature} so that {benefit}
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A detailed description of the story, including context and any relevant information.
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: The acceptance criteria for the story.
+      placeholder: |
+        - [ ] Acceptance criteria item 1
+        - [ ] Acceptance criteria item 2
+        - [ ] Acceptance criteria item 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Context
+      description: Additional context, info, links, etc.
+    validations:
+      required: false
+
+  - type: upload
+    id: attachments
+    attributes:
+      label: Attachments
+      description: Add any relevant files, such as screenshots or mockups.
+    validations:
+      required: false

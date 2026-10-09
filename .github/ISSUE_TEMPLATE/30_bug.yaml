@@ -1,0 +1,49 @@
+name: 🔴 Bug
+description: An issue that describes a problem or defect.
+labels: ['type:bug', 'status:new']
+title: "🔴 "
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What did happen?
+      description: Describe what happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expectation
+    attributes:
+      label: What did you expect to happen?
+      description: Describe what should have happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Describe the steps to reproduce the bug.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Context
+      description: Additional context, info, links, etc.
+    validations:
+      required: false
+
+  - type: upload
+    id: attachments
+    attributes:
+      label: Attachments
+      description: Add any relevant files, such as screenshots or mockups.
+    validations:
+      required: false

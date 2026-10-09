@@ -1,0 +1,36 @@
+name: 🟢 Spike
+description: A research task aimed at exploring solutions or gathering information.
+labels: ['type:spike', 'status:new']
+title: "🟢 "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research Question
+      description: What question needs to be answered?
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables
+      description: What should be produced as a result of this research?
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Context
+      description: Additional context, info, links, etc.
+    validations:
+      required: false
+
+  - type: upload
+    id: attachments
+    attributes:
+      label: Attachments
+      description: Add any relevant files, such as screenshots or mockups.
+    validations:
+      required: false

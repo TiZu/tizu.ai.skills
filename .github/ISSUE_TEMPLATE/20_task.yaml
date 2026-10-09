@@ -1,0 +1,28 @@
+name: 🟡 Task
+description: A specific piece of work that needs to be completed.
+labels: ['type:task', 'status:new']
+title: "🟡 "
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A detailed description of the task at hand.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Context
+      description: Additional context, info, links, etc.
+    validations:
+      required: false
+
+  - type: upload
+    id: attachments
+    attributes:
+      label: Attachments
+      description: Add any relevant files, such as screenshots or mockups.
+    validations:
+      required: false
